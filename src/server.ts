@@ -54,6 +54,7 @@ class ServerConnection {
     this.app.listen(this.port, () => {
       console.log(`Servidor corriendo en puerto ${this.port}`);
     });
+    this.requestItems();
     this.get();
   }
 
